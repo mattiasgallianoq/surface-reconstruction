@@ -13,10 +13,9 @@ conda activate surface-recon
 pip install -r "requirements.txt"
 
 running:
-edut config
-surfel_cloud = 'all_helmet.ply' # TODO change this
+edit config
 
-run finn TODO may need to sub this model due to scaling / offset, also required env possibly incompatible with bpy
+run surface recon model e.g. finn TODO may need to sub this model due to scaling / offset, also required env possibly incompatible with bpy
 e.g. os.system(f"powershell cp {surfel_cloud} ./FINN/")
 os.system(f"conda activate finn && cd FINN && python surface_reconstruct.py --pc_num 10000 --model FINN -g 0")
 
