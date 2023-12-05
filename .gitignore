@@ -1,4 +1,4 @@
 __pychache__
 FINN
-input/
-output/
+input/*
+output/*
