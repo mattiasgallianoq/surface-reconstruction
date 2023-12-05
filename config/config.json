@@ -1,0 +1,48 @@
+{
+    "io":
+    {
+        "mesh_path": "input/forehead.ply",
+        "materials":
+        {
+            "chrome":
+            {
+                "cloud_path": "input/forehead_chrome.ply",
+                "properties":
+                {
+                        "color": [1.0, 1.0, 1.0],
+                        "metallic": 1.0,
+                        "roughness": 0.0
+                }
+            },
+            "gloss":
+            {
+                "cloud_path": "input/forehead_gloss.ply",
+                "properties":
+                {
+                    "color": [1.0, 0.2, 0.0],
+                    "metallic": 0.3,
+                    "roughness": 0.3
+                }
+            },
+            "semigloss":
+            {
+                "cloud_path": "input/forehead_semi.ply",
+                "properties":
+                {
+                    "color": [1.0, 0.2, 0.0],
+                    "metallic": 0.3,
+                    "roughness": 0.7
+                }
+            }
+        },
+        "output_path": "output/output.usda"
+    },
+    "params":
+    {
+        "repair_iters": 0,
+        "remesh_iters": 5,
+        "face_threshold": 50000,
+        "n_neighbors": 20
+    },
+    "debug": false
+}
